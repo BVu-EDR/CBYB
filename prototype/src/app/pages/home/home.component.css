@@ -1,0 +1,40 @@
+.hero {
+    height: 600px;
+    background-color: #4286F4;
+    z-index: -1;
+}
+
+.image {
+    height: 100%;
+    width: auto;
+    background-size: cover;
+    object-fit: cover;
+    background-image: url("../../../assets/build1.png");
+}
+
+.hero .address-entry {
+    position: relative;
+    top: 400px;
+    /* left: 50px; */
+    z-index: 1; 
+}
+
+.websiteTitle {
+    position: relative;
+    top: 350px;
+    /* left: 50px; */
+}
+
+.newContainer {
+    margin: 0px 200px;
+}
+
+.grey {
+    padding-top: 20px;
+    background-color: #214263;
+}
+
+.blank {
+    padding-top: 20px;
+    background-color: #E3E8EA;
+}

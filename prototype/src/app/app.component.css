@@ -1,0 +1,35 @@
+nav {
+    height: 50px;
+}
+
+.navbar {
+    /* background-color: rgb(62, 65, 64); */
+    background-color: #4286F4
+}   
+
+nav a {
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    margin: 10px 5px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+}
+nav a:visited, a:link {
+    color: #607d8b;
+}
+
+nav a:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+}
+
+nav a.active {
+    color: #039be5;
+}
+
+.newContainer {
+    margin: 0px 200px;
+}

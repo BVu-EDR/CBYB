@@ -1,0 +1,75 @@
+<div class="page">
+    <div class="container1">
+        <h2>Where are you building?</h2>
+        <div class="example-container">
+            <form (ngSubmit)="onSubmit()" #addressForm="ngForm">
+
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label>Street Address</label>
+                        <input placeholder="" type="text" class="form-control" id="street" required [(ngModel)]="model.street" name="street">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label>Town/City</label>
+                        <input placeholder="" type="text" class="form-control" id="town" required [(ngModel)]="model.town" name="town">
+                    </div>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group col-4">
+                        <label> State </label>
+                        <select class = "form-control" placeholder="State" 
+                        id="state" required [(ngModel)]="model.state" name="state">
+                            <option *ngFor="let state of states" [value]="state">
+                                {{state}}
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-8">
+                        <label>Zip Code</label>
+                        <input placeholder="" type="text" class="form-control" id="zipcode" required [(ngModel)]="model.zipcode" name="zipcode">
+                    </div>
+                </div>
+
+                <div class="button-row">
+                    <div class="col" style="display: flex; flex-direction: row-reverse;">
+                        <!-- {{diagnostic}} -->
+                        <button type="submit" class="btn btn-success" [disabled]="!addressForm.form.valid">View on Map</button>
+                        <div class="error">{{errorMessage}}</div>
+                        <div class="success">{{successMessage}}</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="map" leaflet [leafletOptions]="options" [leafletLayers]="layers" [leafletFitBounds]="fitBounds" (leafletMapReady)="onMapReady($event)">
+        </div>
+    </div>
+
+    <div class="container3">
+        <h2>What type of project is it?</h2>
+        <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+        </div>
+        <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+        </div>
+        <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio3">Or toggle this other custom radio</label>
+        </div>
+    </div>
+
+    <div class="container4">
+        <button color="primary" style="align-items: flex-end">View Results</button>
+    </div>
+</div>

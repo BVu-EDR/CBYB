@@ -1,0 +1,79 @@
+<div class="page">
+  <div class = "card">    </div>
+  <div class="map">
+    <app-map></app-map>
+  </div>
+  <div class="tabbar">
+    <div class = "card cardbutton" routerLink="/details">
+      <div class="logo">
+        <img src='../../assets/house with fence.svg'>
+      </div>
+      <div class="label">Property Boundaries</div>
+      <div class="sign red">High</div>
+    </div>
+    <div class = "card cardbutton" routerLink="/details" >
+      <div class="logo">
+        <img src='../../assets/blueprints.svg'>
+      </div>
+      <div class="label">Planning & Zoning</div>
+      <div class="sign green">Low</div>
+    </div>
+    <div class = "card cardbutton" routerLink="/details" >
+      <div class="logo">
+        <img src='../../assets/house flood.svg'>
+      </div>
+      <div class="label">Flood Zone</div>
+      <div class="sign green">Low</div>
+    </div>
+    <div class = "card cardbutton" routerLink="/details" >
+      <div class="logo">
+        <img src='../../assets/cat tails.svg'>
+      </div>
+      <div class="label">Wetlands</div>
+      <div class="sign red">High</div>
+    </div>
+    <div class = "card cardbutton" routerLink="/details" >
+      <div class="logo">
+        <img src='../../assets/soil.svg'>
+      </div>
+      <div class="label">Soil Type</div>
+      <div class="sign orange">Medium</div>
+    </div>
+    <div class = "card cardbutton" routerLink="/details" >
+      <div class="logo">
+        <img src='../../assets/neighbors.svg'>
+      </div>
+      <div class="label">Utilities</div>
+      <div class="sign green">Low</div>
+    </div>
+    <div class = "card cardbutton" routerLink="/details" >
+      <div class="logo">
+        <img src='../../assets/owl.svg'>
+      </div>
+      <div class="label">Land of Importance</div>
+      <div class="sign orange">Medium</div>
+    </div>
+    <div class = "card cardbutton" routerLink="/details" >
+      <div class="logo">
+        <img src='../../assets/other.svg'>
+      </div>
+      <div class="label">Other</div>
+      <div class="sign green">Low</div>
+    </div>
+
+  </div>
+  <div class="textArea">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum </div>
+  <div class="head">
+    <h1 class="title"> {{propertyAddress.street}}, {{propertyAddress.town}}, {{propertyAddress.state}} </h1>
+    <div class="link">
+      <a routerLink="/intermediary">Edit Address</a>
+      <a>Download Report</a>
+
+    </div>
+  </div>
+</div>

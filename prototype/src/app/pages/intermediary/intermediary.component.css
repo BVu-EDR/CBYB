@@ -1,0 +1,85 @@
+.page {
+    min-height: 1100px;
+    width: 100%;
+    background: linear-gradient(to bottom, #4286F4, #4286F4 350px, #E3E8EA 350px,#E3E8EA); /* W3C */
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 20%;
+    grid-template-rows: 0px .85fr .75fr 100px 50px;
+    padding-top: 50px;
+}
+
+.map {
+    height: 100%;
+}
+
+.container1 {
+    margin: 10px;
+    padding: 20px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: white;
+    border-radius: 40px;
+    padding-top: 40px;
+}
+
+.container2 {
+    margin: 10px;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.container3 {
+    margin: 10px;
+    padding: 20px;
+    padding-top: 40px;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    background: white;
+    border-radius: 40px;
+}
+
+.container4 {
+    padding: 20px;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: row-reverse;
+    /* background: white; */
+    /* border-radius: 40px; */
+}
+
+h2 {
+    text-align: center;
+    color: grey;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+}
+  
+.example-container > * {
+    padding-top: 10px;
+    align-self: center;
+    width: 90%;
+}
+
+.error {
+    font-weight: 600;
+    color: darkred;
+    text-align: center;
+    margin-right: 20px;
+    align-self: center;
+}
+
+.success {
+    font-weight: 600;
+    color: darkgreen;
+    text-align: center;
+    margin-right: 20px;
+    align-self: center;
+}
+
+.button-row {
+    padding-top: 10px;
+}
